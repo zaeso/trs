@@ -34,7 +34,7 @@ def handle_message(message):
     chat_id = message.chat.id
     text = "Я получил твое сообщение! Что ты хочешь с ним сделать?"
     
-    bot.send_chat_action(chat_id, 'typing')  # 
+    bot.send_chat_action(chat_id, 'typing')  #
     time.sleep(1) 
     
     bot.send_message(chat_id, text, reply_markup=gen_markup_for_text())
